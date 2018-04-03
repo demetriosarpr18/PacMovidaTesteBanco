@@ -1,0 +1,95 @@
+/*PARA FAZER AINDA*/
+/*Desing para celular*/
+@media only screen and (min-width: 375px)
+{
+    #menu
+    {
+        position: fixed;
+        width:0;
+        opacity: 0.9;
+        background-color: orangered;
+        height:100%;
+        z-index: 10;
+        transition: 0.5s;
+        overflow-x: hidden;
+        cursor: url(../imagens/cursor2.cur),default;
+    }
+
+    .menu-lateral, .sub-menu
+    {
+        list-style: none;
+        padding: 0;
+        margin:0;
+    }
+
+    .menu-lateral a
+    {
+        display: block;
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+        padding: 10px;
+        font-size: 17pt;
+        margin-left: 10%;
+        transition: 0.5s;
+    }
+
+    .menu-lateral a:hover
+    {
+        cursor:url(../imagens/cursor2.cur),default;   
+        text-decoration: none;
+        color: gray;     
+    }
+ 
+    .menu-lateral li .sub-menu
+    {
+        display: block;
+        font-style: none;
+        max-height: 200px;
+        margin-left: 30px;
+    }
+
+    /* .sub-menu
+    {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.8s ease-out;
+        margin-left: 8%; 
+    } */
+
+    #saudacao_usuario
+    {
+        color: white;
+        font-size: 15pt;
+        font-weight: bolder;
+        transform: uppercase;
+        text-align: center;
+    }
+
+    .botao-fechar
+    {
+        color: white;
+        margin-left: 70%;
+        font-size: 44pt;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 636px)
+{
+
+    #menu-lateral
+    {
+        margin: 0%;
+
+
+    }
+
+    #saudacao_usuario
+    {
+        margin-top: 4%;
+    }
+
+
+}
+

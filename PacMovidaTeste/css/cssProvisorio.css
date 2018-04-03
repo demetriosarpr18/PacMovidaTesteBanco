@@ -1,0 +1,94 @@
+/*PARA FAZER AINDA*/
+/*Desing para celular*/
+@media only screen and (min-width: 375px)
+{
+        #menu
+    {
+        position: absolute;
+        display:none;
+        width: 13.2%;
+        height: 97%;
+        float: left;
+        background-color: rgba(255,255,255,.9);
+        transform-origin: center;
+        margin: 1% 1%;
+
+    }
+
+    #logo-pac img
+    {
+        width: 100%;
+        position: relative;
+        margin: 4% 0%;
+    }
+
+    #saudacao_usuario
+    {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        color: darkorange;
+        margin: 25% 10%;
+        width: 100%;
+    }
+
+    #opcoes-menu
+    {
+        position: absolute;
+        list-style: none;
+    }
+
+    #opcoes-menu li
+    {
+        margin-bottom: 15px;
+
+    }
+
+    .botao-menu
+    {
+        border: 18px solid rgba(255,69,0,.8);
+        width: 0;
+        transition: width .6s ease-in-out;
+
+    }
+
+    .botao-menu a
+    {
+        display: block;
+        background-color: rgba(255,69,0,.8);
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 0em;
+        transition: color, font-size 1s;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .botao-menu:nth-child(1):hover, .botao-menu:nth-child(2):hover,
+    .botao-menu:nth-child(3):hover,  .botao-menu:nth-child(4):hover,
+    .botao-menu:nth-child(5):hover
+    {
+        width: 100%;
+    }
+
+    .botao-menu:hover > a
+    {
+        font-size: 20px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 768px)
+{
+
+}
+
+@media (min-width: 1200px) and (min-height: 776px)
+{
+
+
+}

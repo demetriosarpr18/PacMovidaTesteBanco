@@ -1,0 +1,390 @@
+/*PARA FAZER AINDA*/
+/*Desing para celular*/
+@media only screen and (min-width: 375px)
+{
+
+    html, body
+    {
+        width: 100%;
+        height: 100%;
+        background-image: url("../imagens/movida-background.jpg");
+        overflow-x: hidden;
+    }
+
+    #menuPrincipal
+    {
+        float: none;
+    }
+
+    #menuPrincipal:hover, .fa-bars:hover
+    {
+        cursor: url('../imagens/cursor2.cur'),default;
+    }
+
+    .icon-menu
+    {
+        text-transform: uppercase;
+        font-size: 14pt;
+        font-weight: bolder;
+        color: orangered;
+        float:left;
+        margin-top:13%;
+        width:30%;
+        margin-left: 4%;
+    }
+
+    .cabecalho-form
+    {
+        position: relative;
+        margin-bottom: 2%;
+    }
+
+    .logo-movida
+    {
+        width:50%;
+        margin-right: 16%;
+    }
+
+    #logo-pac
+    {
+        display: none;
+    }
+
+     #barraPesquisa
+     {
+        margin-left: 2%;
+        width:70%;
+        font-size: 12pt;
+     }  
+
+     #barraPesquisa:focus
+     {
+        outline:2px solid orangered;
+     }
+
+     ::placeholder
+     {
+        color:orangered;
+     }
+
+    .bootstrap-select>.btn
+    {
+        width: 1000px;
+    }
+
+    .btn-group-vertical>.btn, .btn-group>.btn
+    {
+        float: none;
+        position: relative;
+
+    }
+
+     #btnPesquisar
+     {
+        height: 100%;
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        font-weight: bolder;
+        font-size: 12pt;
+        transition: all 0.8s ease 0s;
+     }
+
+    .logos
+    {
+        margin:0;
+    }
+
+    form
+    {
+        height: 155%;
+        width:100%;
+        background-color: rgba(255,255,255,.92);
+    }
+
+    #formularios
+    {
+        position: relative;
+        margin-left: 2%;
+        overflow-y: scroll;
+    }
+
+    .titulo-form
+    {
+        color: orangered;
+        width: 100%;
+    }
+
+    table#alter tr td .direita
+    {
+        width: 80%;
+    }
+
+    #inf-esquerda label, #inf-direita label, #inf-responsaveis label
+    {
+        width: 30%;
+        font-size: 13pt;
+    }
+
+    #inf-esquerda span, #inf-direita span, #inf-responsaveis span
+    {
+        word-wrap: break-word;
+    }
+
+
+    .direita
+    {
+        width:70%;
+        word-wrap: break-word;
+        font-size: 13pt;
+    }
+
+    .pontoReferenciasDev, .pontoReferenciasRet
+    {
+        float: none;
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        resize: none;
+        font-size: 16pt;
+        outline: none;
+    }
+
+    #inf-esquerda div
+    {
+        display: block;
+    }
+
+    .msgStatus
+    {
+        z-index: 10;
+        position: absolute;
+        left: 15%;
+        top: 2%;
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (min-width:768px)
+{
+
+    .icon-menu
+    {
+        width: 20%;
+        font-size: 22pt;
+    }
+
+    .logos
+    {
+        margin:0;
+        width: 75%;
+        height: 100%;
+        float :right;
+
+    }
+    #logo-pac
+    {
+        display: block;
+        width:50%;
+        float:right;
+    }
+
+    .logo-movida
+    {
+        margin:0;
+        width:50%;
+    }
+
+    #area-pesquisa
+    {
+        width: 50%;
+        height:40%;
+        margin-left: 2%;
+
+    }
+
+/*    .open>.dropdown-menu
+    {
+        margin-left: 2%;
+        width: 40%;
+    }*/
+
+
+    #barraPesquisa
+    {
+        width:40%;
+        height:100%;
+        font-size: 20pt;
+        color: orangered;
+    }
+
+    #btnPesquisar
+    {
+        font-size: 16pt;
+    }
+
+    .titulo-form
+    {
+        font-size: 20pt;
+    }
+
+    #inf-esquerda, #inf-direita, #inf-responsaveis
+    {
+        font-size: 20pt;
+    }
+
+    #inf-esquerda label, #inf-direita label, #inf-responsaveis label
+    {
+        font-size: 17pt;
+    }
+
+    #inf-esquerda span, #inf-direita span, #inf-responsaveis span
+    {   
+        font-size: 17pt;
+    }
+
+    #map-esquerda ,#map-direita
+    {
+        margin-top: 10%; 
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 636px)
+{
+
+    html, body
+    {
+        overflow: hidden;
+    }
+
+    .icon-menu
+    {
+        margin:1.5% 3%;
+    }
+
+    .logos
+    {
+        display: block;
+        width:50%;
+        height: 20%;
+    }
+
+    #barraPesquisa
+    {
+        width: 38%;
+    }
+
+    #btnPesquisar
+    {
+        font-size: 17pt;
+    }
+
+    #logo-pac
+    {
+        display: block;
+        width:30%;
+        margin-right: 5%;
+    }
+
+    .logo-movida
+    {   display: inline-block;
+        width:37%;
+        margin-left: 9%;
+    }
+
+    .open>.dropdown-menu
+    {
+        margin-left: 2%;
+        width: 38%;
+    }
+
+    #formularios
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #inf-esquerda
+    {
+        width: 33%;
+        margin:0;
+        height: 27%;
+        display: inline-block;
+    }
+
+    #inf-direita
+    {
+        width: 33%;
+        height: 27%;
+        margin-left: 3%;
+        display: inline-block;  
+    }
+
+     #inf-responsaveis
+     {
+        width: 25%;
+        height: 27%;
+        display: inline-block;
+        margin-left: 5%;
+     }
+
+     .titulo-form
+     {
+        margin-top: 0; 
+        font-size: 16pt;
+     }
+
+     #inf-esquerda label, #inf-direita label, #inf-responsaveis label
+     {
+        font-size: 13pt;
+        margin: 0;
+     }
+
+     #inf-esquerda span, #inf-direita span, #inf-responsaveis span
+     {
+        font-size: 11pt;
+     }
+
+    #map-esquerda ,#map-direita
+    {
+        align-content: center;
+        margin-top: 10%; 
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) and (min-height: 981px)
+{
+
+     .titulo-form
+     {
+        font-size: 22pt;
+     }
+
+     #inf-esquerda label, #inf-direita label, #inf-responsaveis label
+     {
+        font-size: 17pt;
+     }
+
+    #inf-esquerda span, #inf-direita span, #inf-responsaveis span
+     {
+        font-size: 16pt;
+     }
+
+        #logo-pac
+    {
+        width:32%;
+    }
+
+    .logo-movida
+    {  
+        width:37%;
+    }
+
+}

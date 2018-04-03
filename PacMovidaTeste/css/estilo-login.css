@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/*Design para celular*/
+/*Set every value */
+*{
+    margin:0;
+    padding:0;
+}
+/*Configurando para que a tela ocupe toda a pagina na parte vertical*/
+html
+{
+    position: absolute;
+    margin:0%;
+    height: 100%;
+    width: 100%;
+    
+}
+
+/*Configuração da página como um todo */
+body
+{
+    position: fixed;
+    margin:0%;
+    height: 100%;
+    width: 99.8%;
+    background-image: url("../imagens/movida-background.jpg");
+    overflow: hidden;
+}
+
+/*Configuração do container que tem todos os conteudos do login*/
+.container-login
+{
+    margin:0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.9);
+    border: 1px solid orangered;
+}
+/*Configurações para que com a tela de celular a logo da movida não apareça*/
+#movida-logo
+{
+    display: none;
+}
+/*Configurações das imagens*/
+#pac-logo
+{
+    width:70%;
+    margin: 0% 0%;
+}
+/*Configurações do formulário Email, senha e botão Login e das imagens*/
+#formLogin
+{
+    position: relative;
+    margin: 30% 14.8%;
+    width: 100%;
+}
+/*Configurações da mensagem caso o usuário digite a senha ou o email errado*/
+#msgErro
+{
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    width:100%;
+    color: red;
+    padding: 10px;
+    font-weight: bolder;
+    margin: 0% 6%;
+}
+
+/*Configuração dos inputs de email e senha*/
+#caixaEmail, #caixaSenha,#btnLogin
+{
+    position: relative;
+    margin: 0% 0% 0% 0%;
+    width: 70%;
+    font-size: 22pt;
+    color: orangered;
+}
+
+    #caixaEmail, #caixaSenha
+    {
+        margin: 1% 0%;
+        width: 70%;
+        height: 35px;
+        font-size: 14pt;
+    }
+/*Configurações do esqueci a senha*/
+    #esqueciSenha
+    {
+        margin:0.5% 23.5%;
+        font-size: 15pt;
+        color: orangered;
+    }
+/*Configurações do esqueci a senha quando passar o mouse em cima*/
+    #esqueciSenha:hover
+    {
+        color: darkorange;
+        transition: 1s;
+    }
+
+/*Configurações dos placeholders do input de email e senha*/
+::placeholder
+{
+    font-size:18pt;
+    color: orangered;
+}
+/*Configuração de quando clicar em um dos inputs mostra a faixa laranja*/
+#caixaEmail:focus, #caixaSenha:focus, #emailEsqueciSenhaID:focus
+{
+    outline: 2px solid orange;
+
+}
+
+/*Configurações dos botão Login*/
+#btnLogin
+{
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+    font-size: 22pt;
+    transition: all 0.8s ease 0s;
+}
+
+#tituloEsqueci
+{
+    margin-bottom: 3%;
+    color: orangered;
+}
+
+#campoEsqueciSenha
+{
+    position: relative;
+    /*margin:-8% 26.3%;*/
+    margin: 0 auto;
+}
+
+.container-esqueci-senha
+{
+
+}
+
+#emailEsqueciSenhaID
+{
+    font-size: 20pt;
+    color:orangered;
+}
+
+#btnEsqueciSenhaID, #btnVoltarLoginID
+{
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+    font-size: 14pt;
+    width: 46%;
+    transition: all 0.8s ease 0s;
+    margin: 1.5% 1.6%;
+}
+
+.container-esqueci-senha
+{
+    width:50%;
+    margin: 0 auto;
+}
+
+/*Desing para Tablets*/
+@media only screen and (min-width: 768px)
+{
+
+     #formLogin
+    {
+        margin:22% 12%;
+    }
+
+    ::placeholder
+    {
+        font-size: 22pt;
+    }
+
+    #movida-logo
+    {
+        display: inline-block;
+        margin:0;
+    }
+
+    #pac-logo
+    {
+        width:40%;
+        margin-left:0%;
+    }
+
+    #movida-logo
+    {
+        width: 40%;
+    }
+
+    #msgErro
+    {
+        font-size: 23pt;
+        margin: 0% 16%;
+    }
+
+    .input-form
+    {
+        margin: 3% 0%;
+    }
+
+    #caixaEmail, #caixaSenha, #btnLogin
+    {
+        margin: 0.5% 6%;
+        width: 65%;
+        height: 60px;
+    }
+
+    #btnLogin
+    {
+        font-family: arial;
+        font-size: 22pt;
+    }
+
+}/*media*/
+
+/*Desktop Design*/
+@media only screen and (min-width: 1000px)
+{
+    body
+    {
+        width:40%;
+        margin: 0% 31%;
+    }
+
+    .container-login
+    {
+        margin:0% 80%;
+    }
+
+    #movida-logo, #pac-logo
+    {
+        width: 40%;
+    }
+
+    #formLogin
+    {
+        margin:14% 14%;
+    }
+
+    #msgErro
+    {
+        margin:0% 4%;
+    }
+
+    #caixaEmail, #caixaSenha, #btnLogin
+    {
+        width: 60%;
+        font-size: 20pt;
+        height:10%;
+    }
+
+    ::placeholder
+    {
+        font-size: 17pt;
+    }
+
+}
