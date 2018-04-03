@@ -1,7 +1,7 @@
 <?php
 
 //conexão com o Oracle
-$conexao = oci_connect('movidasup', 'supadmin', 'localhost/xe');
+$conexao = oci_connect('movidasup', 'supadmin', 'http://127.0.0.1:8080/apex/f?p=4500:1000:3809102411026123/xe');
  
 if (!$conexao) {
 $erro = oci_error();
